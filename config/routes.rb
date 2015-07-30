@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
 
+# Routes to CREATE directors
+
+get("/directors/new_form", { :controller => "imdbs", :action => "new_form" })
+get("/directors/create_director", { :controller => "imdbs", :action => "create_director_row" })
+
 # Routes to READ directors
 
 get("/directors", { :controller => "imdbs", :action => "directors" })

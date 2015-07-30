@@ -1,6 +1,8 @@
 <h1><%= @director.name %></h1>
+<a href="http://localhost:3000/delete_director/<%= @director.id %>">Delete</a>
 
-<img src="<%= @director.image_url %>" width="400">
+<p><img src="<%= @director.image_url %>" width="400"></p>
 
 <p><b>Born: <%= @director.dob %></b></p>
 <%= @director.bio %>
+

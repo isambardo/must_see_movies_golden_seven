@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
 
+# Routes to READ directors
+
 get("/directors", { :controller => "imdbs", :action => "directors" })
 get("/directors/:id", { :controller => "imdbs", :action => "director_details" })
 
+# # Routes to DELETE directors
 
-  # Routes to CREATE photos
+get("/delete_director/:id", { :controller => "imdbs", :action => "destroy" })
+
   # get("/photos/new", { :controller => "photos", :action => "new_form" })
   # get("/photo/create_photo", { :controller => "photos", :action => "create_row" })
 

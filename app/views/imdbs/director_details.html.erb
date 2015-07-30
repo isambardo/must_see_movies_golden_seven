@@ -1,5 +1,7 @@
 <h1><%= @director.name %></h1>
-<a href="http://localhost:3000/delete_director/<%= @director.id %>">Delete</a>
+<a href="http://localhost:3000/delete_director/<%= @director.id %>">Delete</a><b>  </b>
+<a href="/directors/<%= @director.id %>/edit_form">Edit details</a><b>  </b>
+<a href="/directors">Go back</a>
 
 <p><img src="<%= @director.image_url %>" width="400"></p>
 

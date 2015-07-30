@@ -10,6 +10,11 @@ get("/directors/create_director", { :controller => "imdbs", :action => "create_d
 get("/directors", { :controller => "imdbs", :action => "directors" })
 get("/directors/:id", { :controller => "imdbs", :action => "director_details" })
 
+# Routes to UPDATE photos
+
+get("/directors/:id/edit_form", { :controller => "imdbs", :action => "edit_form" })
+get("/update_director/:id", { :controller => "imdbs", :action => "update_director_row" })
+
 # # Routes to DELETE directors
 
 get("/delete_director/:id", { :controller => "imdbs", :action => "destroy" })

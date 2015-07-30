@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 get("/directors", { :controller => "imdbs", :action => "directors" })
+get("/directors/:id", { :controller => "imdbs", :action => "director_details" })
 
 
   # Routes to CREATE photos
